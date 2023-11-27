@@ -17,8 +17,8 @@
 
 import tkinter as tk
 
-from lib.quittable_frame import QuittableFrame
-from lib.header_text import HeaderText
+from lib.components.quittable_frame import QuittableFrame
+from lib.enums.header_text import HeaderText
 
 
 class ResultsFrame(QuittableFrame):

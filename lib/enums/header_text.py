@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # quiz-helper: Test your knowledge and revise important topics.
 #
 # Copyright (C) 2023 A-725-K (Andrea Canepa)
@@ -17,22 +15,18 @@
 # You should have received a copy of the GNU General Public License along with
 # this program. If not, see <https://www.gnu.org/licenses/>.
 
-"""
-Program to test knowledge with multiple choice quizzes
-"""
-
-__version__ = '1.0'
-__author__ = 'A-725-K (Andrea Canepa)'
-
-from lib.components.main_window import MainWindow
+import enum
 
 
-def main():
-    """
-    Entry point
-    """
-    MainWindow().start()
-
-
-if __name__ == "__main__":
-    main()
+class HeaderText(enum.Enum):
+    RESULTS = "results"
+    CORRECT = "correct answers"
+    TOTAL = "total answers"
+    RATIO = "correct answer %"
+    ONLY_CORRECT = "only correct"
+    ONLY_CORRECT_TOTAL = "only correct total"
+    ONLY_CORRECT_RATIO = "only correct %"
+    TOTALLY_CORRECT = "totally correct"
+    PARTIALLY_CORRECT = "partially correct"
+    TOTALLY_WRONG = "totally wrong"
+    TOTALLY_CORRECT_RATIO = "totally correct %"

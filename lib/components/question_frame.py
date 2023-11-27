@@ -40,6 +40,7 @@ class QuestionFrame(tk.Frame):
             pady=5,
             bg="LemonChiffon2"
         ).pack(fill=tk.X, expand=True, padx=20, pady=10)
+
         for idx, ans in enumerate(question.answers):
             self._choices.append(tk.BooleanVar())
             text_color = "black"

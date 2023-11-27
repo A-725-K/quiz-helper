@@ -19,9 +19,9 @@ import tkinter as tk
 from PIL import ImageTk, Image
 from tkinter import messagebox
 
-from lib.results_frame import ResultsFrame
-from lib.start_frame import StartFrame
-from lib.quiz_ui import QuizUI
+from lib.components.results_frame import ResultsFrame
+from lib.components.start_frame import StartFrame
+from lib.components.quiz_ui import QuizUI
 
 
 class MainWindow(tk.Tk):

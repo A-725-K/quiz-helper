@@ -18,8 +18,8 @@
 import tkinter as tk
 from tkinter import messagebox
 
-from lib.quittable_frame import QuittableFrame
-from lib.question_frame import QuestionFrame
+from lib.components.quittable_frame import QuittableFrame
+from lib.components.question_frame import QuestionFrame
 
 
 class QuizUI(QuittableFrame):

@@ -19,9 +19,9 @@ import tkinter as tk
 import tkinter.filedialog as fd
 from tkinter import messagebox
 
-from lib.quiz import Quiz
-from lib.help_dialog import HelpDialog
-from lib.parse_exception import ParseException
+from lib.datatypes.quiz import Quiz
+from lib.components.help_dialog import HelpDialog
+from lib.exceptions.parse_exception import ParseException
 
 
 class StartFrame(tk.Frame):
