@@ -106,6 +106,8 @@ class StartFrame(tk.Frame):
                     title="File error",
                     message="File not supported or malformed!",
                 )
+                file = None
+                filename = None
 
         # forward quiz data structure to the controller
         self._parent.set_quiz(quiz)
