@@ -1,0 +1,5 @@
+label1,Is this the first question?,@Yes:No
+#label1.5,This question is not included in the quiz,Why?:Is ingnored:Because of the #:At the beginning of the line.
+label2,"Is this the first question, isn't it?","Yes, of course:@No, what are you saying?#!"
+
+label3,This question has multiple correct answers. Which ones?,Answer1:@Answer2:Answer3:@Answer4
