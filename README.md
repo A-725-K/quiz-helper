@@ -2,7 +2,16 @@
 
 Create all the quiz you want to test your knowledge in a straightforward
 manner with the aid of **Quiz-Helper**. This tool can help review your current
-expertise in a topic.
+expertise in a topic. The tool of choice if you need to prepare for an exam or
+a certification. Quickly create your own knowledge base, an be in control of
+your own assessment. You can also create fun quizzes for your friend with an
+immediate interface and ready-to-go setup.
+
+## How it looks
+Main Page/Results Overview | Question/Review
+--- | ---
+![](img/start.png) | ![](img/question.png)
+![](img/results.png) | ![](img/review.png)
 
 ## Getting started
 To run this project you have to clone or download this repository, with the command:
