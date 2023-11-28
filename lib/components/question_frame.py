@@ -70,7 +70,7 @@ class QuestionFrame(tk.Frame):
                 state=check_state,
                 disabledforeground=text_color,
             )
-            chkb.pack(anchor="w")
+            chkb.pack(anchor="w", pady=3)
 
             if show_results and idx in user_answers:
                 chkb.select()

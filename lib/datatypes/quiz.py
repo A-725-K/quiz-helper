@@ -54,8 +54,10 @@ class Quiz:
             raise ParseException("Quiz should contain at least a question")
 
         for i, line in enumerate(lines):
+            if len(line) == 0 or line[0].startswith("#"):
+                continue
             if len(line) != 3:
-                raise ParseException(f"Error at line {i}: Wrong # of fields")
+                raise ParseException(f"Error at line {i+1}: Wrong # of fields")
             label = line[0]
             text = line[1]
             answers, correct_answers = self._parse_answers(line[2])
@@ -70,7 +72,7 @@ class Quiz:
         Collect the answers and separate the correct ones
         """
         answers, correct_answers = [], []
-        fields = line.split(":")
+        fields = line.split(":")[:7]
         for i, field in enumerate(fields):
             if field.startswith("@"):
                 field = field[1:]

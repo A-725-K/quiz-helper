@@ -85,7 +85,7 @@ class StartFrame(tk.Frame):
         """
 
         filetypes = (
-            ("csv files", "*.csv"),
+            ("qz files", "*.qz"),
             ("All files", "*.*")
         )
 
@@ -101,13 +101,14 @@ class StartFrame(tk.Frame):
             except AttributeError:
                 print("No file choosen")
                 return
-            except (UnicodeDecodeError, ParseException):
+            except (UnicodeDecodeError, ParseException) as exc:
                 messagebox.showerror(
                     title="File error",
                     message="File not supported or malformed!",
                 )
                 file = None
                 filename = None
+                print(exc)
 
         # forward quiz data structure to the controller
         self._parent.set_quiz(quiz)

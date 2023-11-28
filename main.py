@@ -31,7 +31,7 @@ def main():
     """
     Entry point
     """
-    MainWindow().start()
+    MainWindow(800, 600).start()
 
 
 if __name__ == "__main__":

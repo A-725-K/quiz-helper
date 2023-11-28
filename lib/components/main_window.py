@@ -28,7 +28,7 @@ class MainWindow(tk.Tk):
     """
     Main window of the application
     """
-    def __init__(self):
+    def __init__(self, width, height):
         super().__init__()
 
         self._quiz = None
@@ -36,11 +36,11 @@ class MainWindow(tk.Tk):
             Image.open("res/imgs/icon.png").resize((100, 100)),
         )
         self._background_img = ImageTk.PhotoImage(
-            Image.open("res/imgs/background.jpg").resize((720, 480)),
+            Image.open("res/imgs/background.jpg").resize((width, height)),
         )
 
         self.title("Quiz Helper")
-        self.geometry("720x480")
+        self.geometry(f"{width}x{height}")
         self.resizable(False, False)
         self.wm_iconphoto(False, self._icon_img)
 
